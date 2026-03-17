@@ -30,6 +30,8 @@ str(data)
 # =====================================================
 # 2. Data Cleaning
 # =====================================================
+# Removes duplicate data
+data <- distinct(data)
 
 # Remove rows with missing ratings
 data <- data[!is.na(data$Ratings), ]
